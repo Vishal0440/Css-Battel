@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background-color: aqua;
+      }
+      .card {
+        position: relative;
+        width: 300px;
+        height: 200px;
+        border-radius: 10px;
+        box-shadow: 0px 5px 20px black;
+        padding: 30px 20px;
+        transition: 0.3s;
+        margin: 10px;
+      }
+      .card:hover {
+        height: 300px;
+      }
+      .img {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        transform: translateY(-120px);
+      }
+      img {
+        border-radius: 10px;
+        width: 100%;
+        box-shadow: 0px 5px 20px black;
+      }
+      .content {
+        padding: 10px 20px;
+        text-align: center;
+        transform: translateY(-350px);
+        transition: 0.3;
+        opacity: 0;
+      }
+      .card:hover > .content {
+        transform: translateY(-160px);
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="img">
+        <img src="frds.jpg" alt="" />
+      </div>
+      <div class="content">
+        <h2>Friends Zone</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque ut
+          laudantium minima nostrum, culpa, eligendi eius sequi praesentium illo
+          inventore eveniet quis voluptatem voluptate aliquam molestiae earum.
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="img">
+        <img src="frds.jpg" alt="" />
+      </div>
+      <div class="content">
+        <h2>Friends Zone</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque ut
+          laudantium minima nostrum, culpa, eligendi eius sequi praesentium illo
+          inventore eveniet quis voluptatem voluptate aliquam molestiae earum.
+        </p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="img">
+        <img src="frds.jpg" alt="" />
+      </div>
+      <div class="content">
+        <h2>Friends Zone</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque ut
+          laudantium minima nostrum, culpa, eligendi eius sequi praesentium illo
+          inventore eveniet quis voluptatem voluptate aliquam molestiae earum.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
